@@ -48,7 +48,7 @@ async function getNewMsgs() {
   while (!done) {
     let readerResponse;
     try {
-      readerResponse = await reader.read(); // reading all the data coming from the stream <- actually the first
+      readerResponse = await reader.read(); // reading all the data coming from the stream
     } catch (e) {
       console.log("reader fail ", e);
       presence.innerText = "🔴";

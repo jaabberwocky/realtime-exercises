@@ -26,7 +26,7 @@ const server = http2.createSecureServer({
 });
 
 server.on("stream", (stream, headers) => {
-  const method = headers[":method"];
+  const method = headers[":method"]; 
   const path = headers[":path"];
 
   // streams will open for everything, we want just GETs on /msgs
